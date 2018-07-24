@@ -6,7 +6,7 @@ export class Layout extends PureComponent {
 
   render() {
     return (
-      <section className="main-container" data-region="main">
+      <section className="main-container">
         <Header />
         <Router />
       </section>

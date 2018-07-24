@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+import ColoredTitle from '../../../components/ColoredTitle'
+import ChangeColor from './ChangeColor';
 
 export class Header extends Component {
-
   render() {
     return (
       <header>
-        Je suis un header
+        <ColoredTitle element="h1" text="Présentation GraphQL" />
+        <ChangeColor />
       </header>
     );
   }
