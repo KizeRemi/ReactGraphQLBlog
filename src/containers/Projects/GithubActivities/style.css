@@ -1,0 +1,36 @@
+.bloc-github {
+	background-color: white;
+	height: 620px;
+	margin-right: 30px;
+	order: 1;
+	padding: 30px;
+	width: 25em;
+}
+
+.github-title {
+	margin-bottom: 1rem;
+}
+
+.github-item {
+	border-top: 1px dashed #bababa;	
+	margin: 1rem 0;
+	padding-top: 1rem;
+}
+
+.github-item a {
+	color: #cc9966;
+}
+
+.github-item img {
+	border-radius: 22px;
+	margin-right: 5px;
+	width: 25px;
+}
+
+.github-item i {
+	margin-left: 35px;
+}
+
+.commit-message {
+	font-style: italic;
+}
