@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import Home from '../../Home';
 import NotFound from '../../NotFound';
+import Projects from '../../Projects';
 
 export class Router extends Component {
 
@@ -10,7 +11,8 @@ export class Router extends Component {
     return (
       <main data-region="content">
         <Switch>
-          <Route path="/" component={Home} />
+          <Route path="/" component={Home} exact />
+          <Route path="/projets" component={Projects} exact />
           <Route component={NotFound} />
         </Switch>
       </main>
