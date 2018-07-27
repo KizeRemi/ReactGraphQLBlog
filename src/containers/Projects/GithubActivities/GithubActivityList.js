@@ -7,8 +7,11 @@ class GithubActivityList extends Component {
     const { githubActivities } = this.props;
     return (
       <div className="github-activities-list">
-        {githubActivities.map(githubActivity => (
-          <GithubActivityItem key={githubActivity} githubActivity={githubActivity} />
+        {githubActivities.map((githubActivity, index) => (
+          <GithubActivityItem
+            key={index}
+            githubActivity={githubActivity}
+          />
         ))}
       </div>
     );
