@@ -5,14 +5,15 @@ import './style.css';
 export class Map extends PureComponent {
   render() {
     return (
-      <div class="map-responsive">
+      <div className="map-responsive">
         <iframe
+          title="Headquarter Eleven Labs - Paris - Google Maps"
           src={MapSrc}
           width={1210}
           height={300}
-          frameborder={0}
+          frameBorder={0}
           style={{ border: 0 }}
-          allowfullscreen
+          allowFullScreen
         />
       </div>
     );
