@@ -1,35 +1,31 @@
 import React, { Component, Fragment } from 'react';
 import BranchActivity from './BranchActivity';
 import CommitActivity from './CommitActivity';
+import NewRepoActivity from './NewRepoActivity';
+
+import { getActionFromType } from './helpers';
 
 class GithubActivityItem extends Component {
-
-  getTypeLabel = () => {
-    const { type, pullRequestAction } = this.props.githubActivity;
-
-    if (type === 'CreateEvent') {
-      return 'Create new branch';
-    } else if (type === 'PushEvent') {
-      return 'Pushed to';
-    } else {
-      if(pullRequestAction === 'opened') {
-        return 'Opened a pull request';
-      } else {
-        return 'Merge branch';
-      }
-    }
+  constructor(props) {
+    super(props);
+    this.state = { action: '' };
   }
+
+  componentDidMount() {
+    const { type, pullRequestAction } = this.props.githubActivity;
+    this.setState({ action: getActionFromType(type, pullRequestAction) });
+  }
+
   render() {
     const { githubActivity } = this.props;
-    console.log(githubActivity)
     return (
       <div className="github-item">
         <img src={githubActivity.avatarUrl} alt="Avatar github" />
         {githubActivity.type === 'CreateEvent' &&  !githubActivity.ref ? (
-          <div>New Repo</div>
+          <NewRepoActivity name={githubActivity.name} />
         ) : (
           <Fragment>
-            <span>{this.getTypeLabel()}</span>
+            <span>{this.state.action}</span>
             <BranchActivity name={githubActivity.name} branch={githubActivity.ref} />
             {githubActivity.type === 'PushEvent' && (
               <CommitActivity
