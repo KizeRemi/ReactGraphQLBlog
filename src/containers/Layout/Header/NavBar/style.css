@@ -1,0 +1,79 @@
+.header-unfixed {
+    color: #FFFFFF;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+}
+
+.header-fixed {
+    animation-duration: .15s;
+    animation-name: slideIn;
+    animation-timing-function: ease-out;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(3,27,78,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.header-fixed button {
+    color: #b142ca;
+}
+
+.header-fixed button:after {
+    border-bottom: solid 2px #b142ca;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+.container-nav {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.nav-root {
+    display: flex;
+}
+
+.nav-section.logo {
+    flex-grow: 1;
+}
+
+.nav-section.logo button {
+    font-family: LatoBold;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+button {
+    color: #FFFFFF;
+    height: 60px;
+    padding: 0 25px;
+    font-size: 16px;
+    font-family: HelveticaNeueRoman;
+    letter-spacing: 1px;
+}
+
+
+button:after {
+    border-bottom: solid 2px #ffffff;
+    margin-top: 5px;
+	content: '';
+    display:block;
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+
+button:hover:after { 
+	transform: scaleX(1); 
+}

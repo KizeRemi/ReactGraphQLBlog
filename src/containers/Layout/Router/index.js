@@ -12,7 +12,7 @@ export class Router extends Component {
       <main data-region="content">
         <Switch>
           <Route path="/" component={Home} exact />
-          <Route path="/projets" component={Projects} exact />
+          <Route path="/projets" component={Projects} />
           <Route component={NotFound} />
         </Switch>
       </main>

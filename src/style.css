@@ -1,12 +1,33 @@
+@font-face {
+    font-family: OpenSansRegular;
+    src: url('assets/fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: HelveticaNeueMedium;
+    src: url('assets/fonts/HelveticaNeue-Medium.woff');
+}
+
+@font-face {
+    font-family: HelveticaNeueRoman;
+    src: url('assets/fonts/HelveticaNeue-Roman.woff');
+}
+
+@font-face {
+    font-family: LatoBold;
+    src: url('assets/fonts/Lato-Bold.ttf');
+}
+
 body {
 	background-color: #F8F8F8;
+	font-family: OpenSansRegular;
 }
 
 h1 {
-	color: #cc9966;
-	font-size: 3rem;
-	text-align: center;
-	margin: 2rem 0;
+	font-family: HelveticaNeueMedium;
+	font-weight: bold;
+	color: #ffffff;
+	font-size: 4rem;
 }
 
 h2 {
@@ -54,6 +75,7 @@ h2 {
 .skill-item {
 	width: 33.333333%;
 	padding: 0 1rem;
+	font-family: HelveticaNeueRoman;
 }
 
 .skill-item img {

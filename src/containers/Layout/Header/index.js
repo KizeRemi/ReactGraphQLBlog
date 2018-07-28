@@ -1,14 +1,16 @@
-import React, { Component } from 'react';
-import ColoredTitle from '../../../components/ColoredTitle'
+import React, { Component, Fragment } from 'react';
+import NavBar from './NavBar';
+import Intro from './Intro';
 import ChangeColor from './ChangeColor';
 
 export class Header extends Component {
   render() {
     return (
-      <header>
-        <ColoredTitle element="h1" text="Présentation GraphQL" />
+      <Fragment>
+        <NavBar />
+        <Intro />
         <ChangeColor />
-      </header>
+      </Fragment>
     );
   }
 }

@@ -8,6 +8,7 @@ export class Home extends Component {
       <Fragment>
         <Skills />
         <Map />
+        <div style={{ height: 800 }}>sqdsqd </div>
       </Fragment>
     );
   }
