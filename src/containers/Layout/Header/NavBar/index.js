@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 
+import Logo from '../../../../assets/images/logo.png';
+import LogoReverse from '../../../../assets/images/Logo-reverse.png';
 import './style.css';
 
 class NavBar extends Component {
@@ -22,7 +24,7 @@ class NavBar extends Component {
   }
 
   handleScroll = (event) => {
-    this.setState({ isMenuFixed : event.pageY > 400 });
+    this.setState({ isMenuFixed : event.pageY > 60 });
   }
 
   render() {
@@ -33,8 +35,11 @@ class NavBar extends Component {
           <nav>
             <ul className="nav-root">
               <li className="nav-section logo">
-                <Link to="/" activeClassName="active">
-                  <button type="button">mavillaz remi</button>
+                <Link to="/" activeClassName="active" className="logo-container">
+                  <img src={isMenuFixed ? LogoReverse : Logo } alt="Logo image" />
+                  <button type="button" className="btn-logo">
+                    mavillaz remi
+                  </button>
                 </Link>
               </li>
               <li className="nav-section">

@@ -46,6 +46,8 @@
 
 .nav-section.logo {
     flex-grow: 1;
+    display: flex;
+    align-items: center;
 }
 
 .nav-section.logo button {
@@ -64,6 +66,19 @@ button {
     letter-spacing: 1px;
 }
 
+.btn-logo {
+    padding-left: 0px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 50px;
+    margin: 0 15px 0 25px;
+}
 
 button:after {
     border-bottom: solid 2px #ffffff;

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="908px" height="174px" viewBox="0 0 908 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-7.83534036%" y1="50%" x2="67.8837975%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#C352E7" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-21.000000, -1024.000000)">
+            <g id="Group" transform="translate(21.000000, 1024.000000)">
+                <circle id="Oval" fill="#FFFFFF" cx="858" cy="50" r="50"></circle>
+                <rect id="Rectangle" fill="#FFFFFF" x="461" y="13" width="379" height="74"></rect>
+                <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="99" width="403" height="74"></rect>
+                <rect id="Rectangle" fill="#FFFFFF" transform="translate(431.778714, 93.354864) rotate(-44.000000) translate(-431.778714, -93.354864) " x="355.213571" y="56.3548639" width="153.130286" height="74"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
